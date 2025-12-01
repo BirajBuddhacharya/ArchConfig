@@ -1,0 +1,24 @@
+{
+    "closeOnFocusLoss": false,
+    "considerPreedit": false,
+    "faviconService": "twenty",
+    "font": {
+        "normal": "JetBrainsMonoNL Nerd Font",
+        "size": 10.5
+    },
+    "keybinding": "default",
+    "keybinds": {
+    },
+    "popToRootOnClose": true,
+    "rootSearch": {
+        "searchFiles": true
+    },
+    "theme": {
+        "name": "vicinae-dark"
+    },
+    "window": {
+        "csd": true,
+        "opacity": 0.98,
+        "rounding": 10
+    }
+}
