@@ -1,0 +1,21 @@
+background {
+    color "#1e1e2e"
+}
+
+clock {
+    format "%H:%M"
+    font-size 96
+}
+
+date {
+    format "%A, %d %B"
+    font-size 24
+}
+
+user {
+    avatar true
+}
+
+plugin "powerbar"
+plugin "userinfo"
+
