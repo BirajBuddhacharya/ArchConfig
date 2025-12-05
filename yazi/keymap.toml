@@ -1,0 +1,32 @@
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"
+
+[mgr]
+prepend_keymap = [
+  { on = "!", run  = 'shell "$SHELL" --block --confirm', desc = "Open shell here" },
+  { on = "<Enter>", run  = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+  { on = "l", run  = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+
+  { on = "<C-x>", run  = "remove", desc = "Delete" },
+  # { on = "<C-p>", run = "paste", desc = "Paste"},
+
+  { on = "<C-p>", run = "plugin buffers", desc = "Paste"},
+
+  { on = "o", run  = "open --interactive", desc = "Open With" },
+  { on = "e", run  = "open ", desc = "Open File" },
+
+  { on = ["g", "w"], run = ["shell --confirm 'cp \"$1\" ~/.cache/wall'",   "shell --confirm 'cp \"$1\" ~/.cache/wall-edited'",   "shell --confirm 'swww img ~/.cache/wall --transition-step 255 --transition-fps 255'"], desc = "Put wallpaper" },
+
+  # my bookmark goes here
+  { on = ["b", "b"], run ="cd ~/Knowledge/Books/Computing", desc = "Books" },
+  { on = ["b", "p"], run ="cd ~/Pictures", desc = "Pictures" },
+  { on = ["b", "a"], run ="cd ~/Knowledge/Books/Papers", desc = "Papers" },
+  { on = ["b", "k"], run ="cd ~/Knowledge", desc = "Papers" },
+
+  { on = ["p"], run = "cd ~/.local/share/Spaceshelf"},
+
+
+  { on = "<C-d>", run = 'shell -- dragon -x -T "$1"'}
+]

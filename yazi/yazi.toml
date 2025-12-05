@@ -1,0 +1,20 @@
+[mgr]
+ratio = [1,1,1]
+
+
+# [open]
+# prepend_rules = [
+# 	{ mime = "application/pdf", use = "open_detatched"},
+# 	{ mime = "application/epub+zip", use = "open_detatched"}
+# ]
+
+# [opener]
+# open_detatched= [
+#   { run = 'spaceshelf "$@"', orphan = true },
+# ]
+
+[plugin]
+prepend_preloaders = [
+	{name = "*.mp4", run = "noop" },
+	{name = "*.mkv", run = "noop" },
+]
