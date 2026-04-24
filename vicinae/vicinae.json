@@ -1,6 +1,6 @@
 {
     "closeOnFocusLoss": false,
-    "considerPreedit": false,
+    "considerPreedit": true,
     "faviconService": "twenty",
     "font": {
         "normal": "JetBrainsMonoNL Nerd Font",

@@ -1,0 +1,207 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-shift-p": [
+        "task::Spawn",
+        {
+          "task_name": "Television File Finder",
+          "reveal_target": "center",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space v": "pane::SplitRight",
+      "space h": "workspace::ActivatePaneLeft",
+      "space l": "workspace::ActivatePaneRight",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-f": "editor::Format",
+    },
+  },
+  {
+    "context": "SettingsWindow",
+    "bindings": {
+      "ctrl-w": "workspace::CloseWindow",
+    },
+  },
+  {
+    "context": "RulesLibrary",
+    "bindings": {
+      "ctrl-w": "workspace::CloseWindow",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-b": "editor::ToggleBreakpoint",
+    },
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-5 ctrl-8": "vim::PageUp",
+    },
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-up": "vim::PageUp",
+    },
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "ctrl-4": ["vim::Literal", ["ctrl-b", "\u0002"]],
+    },
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "ctrl-7 ctrl-5": ["vim::Literal", ["ctrl-b", "\u0002"]],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-b": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": null,
+    },
+  },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-p": "menu::SelectPrevious",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w": ["terminal::SendKeystroke", "ctrl-w"],
+      "ctrl-q": null,
+      // "ctrl-w ctrl-q": [
+      //   "terminal::SendKeystroke",
+      //   "plz don't exit my zed instance",
+      // ],
+      "ctrl-p": ["terminal::SendKeystroke", "ctrl-p"],
+      "ctrl-n": ["terminal::SendKeystroke", "ctrl-n"],
+      "alt-b": ["terminal::SendKeystroke", "alt-b"],
+      "alt-f": ["terminal::SendKeystroke", "alt-f"],
+      "alt-o": "editor::ToggleFocus",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-q": null,
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-]": "editor::Indent"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "5 4": "editor::Cancel"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "vim_mode == waiting",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "vim_mode == operator",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "vim_mode == replace",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "((VimControl && vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "ctrl-[": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-[": "editor::Outdent"
+    }
+  }
+]

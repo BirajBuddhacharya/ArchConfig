@@ -1,0 +1,16 @@
+{
+  "dankBatteryAlerts": {
+    "enabled": true,
+    "criticalThreshold": 10
+  },
+  "volumeMixer": {
+    "enabled": true,
+    "pillIcon": "mixer",
+    "maxStreamVol": 151,
+    "showDeviceSelector": true,
+    "pillDisplay": "icon"
+  },
+  "discordVoice": {
+    "enabled": true
+  }
+}
