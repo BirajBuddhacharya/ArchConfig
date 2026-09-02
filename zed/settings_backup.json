@@ -1,16 +1,4 @@
 {
-  "terminal": {
-    "dock": "bottom",
-  },
-  "search_wrap": true,
-  "language_models": {
-    "openai_compatible": {},
-  },
-  "vim": {
-    "use_system_clipboard": "never",
-    "toggle_relative_line_numbers": true,
-  },
-  "cli_default_open_behavior": "new_window",
   "diff_view_style": "split",
   "outline_panel": {
     "dock": "left",
@@ -22,7 +10,6 @@
     "dock": "left",
   },
   "file_finder": {
-    "modal_max_width": "xlarge",
     "include_ignored": "smart",
   },
   "autosave": {
@@ -32,16 +19,7 @@
   },
   "semantic_tokens": "combined",
   "agent_servers": {
-    "claude-acp": {
-      "default_config_options": {
-        "model": "sonnet",
-      },
-      "type": "registry",
-    },
     "opencode": {
-      "default_config_options": {
-        "model": "opencode/deepseek-v4-flash-free",
-      },
       "type": "registry",
     },
   },
@@ -70,12 +48,11 @@
   "icon_theme": {
     "mode": "dark",
     "light": "Zed (Default)",
-    "dark": "Base Charmed Icons",
+    "dark": "Zed (Default)",
   },
   "use_system_window_tabs": false,
   "bottom_dock_layout": "contained",
   "preview_tabs": {
-    "enable_preview_from_file_finder": true,
     "enable_keep_preview_on_code_navigation": false,
   },
   "tabs": {
@@ -86,13 +63,13 @@
   //   "experimental.show": false,
   // },
   "title_bar": {
-    "show_branch_status_icon": true,
     "show_sign_in": true,
     "show_user_picture": true,
     "show_project_items": true,
     "show_branch_name": true,
     "show_onboarding_banner": true,
     "show_menus": false,
+    "show_branch_icon": true,
   },
   "diagnostics": {
     "inline": {
@@ -113,7 +90,6 @@
   "agent_buffer_font_size": 14.0,
   "auto_update": false,
   "edit_predictions": {
-    "allow_data_collection": "no",
     "provider": "zed",
     "mode": "eager",
   },
@@ -164,9 +140,10 @@
     },
     "default_profile": "write",
     "default_model": {
-      "enable_thinking": false,
-      "provider": "KamanaAI",
-      "model": "HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "effort": "high",
+      "enable_thinking": true,
+      "provider": "copilot_chat",
+      "model": "gemini-3.1-pro-preview",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
@@ -180,8 +157,8 @@
   },
   "theme": {
     "mode": "dark",
-    "light": "Kanso Pearl",
-    "dark": "Catppuccin Mocha",
+    "light": "Serendipity Morning",
+    "dark": "Monokai Vibrant Amped",
   },
   "tab_bar": {
     // "show": false,
@@ -224,7 +201,7 @@
   },
   "project_panel": {
     "dock": "left",
-    "hide_hidden": false,
+    "hide_hidden": true,
     "hide_gitignore": false,
     "button": true,
     "file_icons": true,
@@ -256,7 +233,6 @@
     "JavaScript": {
       "show_whitespaces": "none",
       "format_on_save": "off",
-
       "indent_guides": {
         "enabled": false,
       },
@@ -269,31 +245,13 @@
         "enabled": false,
       },
     },
-    "TypeScript": {
-      "language_servers": [
-        "tailwindcss-language-server",
-        "vtsls",
-        "codebook",
-        "oxlint",
-        "oxfmt",
-        "json-language-server",
-      ],
-    },
     "Python": {
       "indent_guides": {
         "background_coloring": "disabled",
         "coloring": "indent_aware",
         "enabled": true,
       },
-      // "language_servers": ["pyrefly", "ruff", "!basedpyright"],
-      "language_servers": [
-        // "ty",
-        "pyrefly",
-        "ruff",
-        "!basedpyright",
-        "codebook",
-      ],
-      // "language_servers": ["ty", "ruff", "!basedpyright"],
+      "language_servers": ["ty", "ruff", "!basedpyright"],
     },
   },
   "agent_ui_font_size": 14.0,
@@ -321,37 +279,6 @@
     },
   },
   "theme_overrides": {
-    "DankShell Dark": {
-      "border.variant": "#15141C",
-      "border": "#15141C",
-    },
-    "Catppuccin Mocha": {
-      "border.variant": "#181825",
-      "border": "#181825",
-      "title_bar.background": "#181825",
-      "search.match_background": "#56C1F7",
-      "search.active_match_background": "#F9DE94",
-      "tab_bar.background": "#181825",
-      "tab.active_background": "#2E2E47",
-      "tab.inactive_background": "#181825",
-      "editor.background": "#181825",
-      "editor.gutter.background": "#181825",
-      "toolbar.background": "#181825",
-      "background": "#181825",
-    },
-    // "One Black": {
-    //   "border.variant": "#181825",
-    //   "border": "#181825",
-    //   "title_bar.background": "#181825",
-    //   "search.match_background": "#56C1F7",
-    //   "search.active_match_background": "#F9DE94",
-    //   "tab_bar.background": "#181825",
-    //   "tab.active_background": "#2E2E47",
-    //   "tab.inactive_background": "#181825",
-    //   "editor.background": "#181825",
-    //   "editor.gutter.background": "#181825",
-    //   "toolbar.background": "#181825",
-    // },
     "Catppuccin Espresso (Blur)": {
       "warning": "#dec184ff",
       "title_bar.background": "#000",
